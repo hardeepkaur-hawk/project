@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Script from "next/script"; // Importing Script from next
+
+import "../../public/css/bootstrap.min.css";
+import "../../public/fonts/bootstrap-icons/font-css.css";
+import "../../public/css/animate.min.css";
+import "../../public/css/swiper-bundle.min.css";
+import "../../public/css/slick.css";
+import "../../public/css/all.min.css";
+import "../../public/css/nice-select.css";
+import "../../public/css/magnific-popup.css";
+import "../../public/css/metisMenu.css";
+import "../../public/css/aos.css";
+import "../../public/css/spacing.css";
+import "../../public/css/main.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,6 +43,27 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+
+        {/* Using Next.js Script component for loading JavaScript files */}
+        <Script src="/js/metisMenu.min.js" strategy="lazyOnload" />
+        <Script src="../js/vendor/jquery-2.2.4.min.js" strategy="beforeInteractive" />
+        <Script src="../js/vendor/popper.min.js" strategy="lazyOnload" />
+        <Script src="../js/vendor/bootstrap.min.js" strategy="lazyOnload" />
+        <Script src="../js/jquery.meanmenu.js" strategy="lazyOnload" />
+        <Script src="../js/swiper-bundle.min.js" strategy="lazyOnload" />
+        <Script src="../js/slick.min.js" strategy="lazyOnload" />
+        <Script src="../js/jquery.easypiechart.min.js" strategy="lazyOnload" />
+        <Script src="../js/jquery.counterup.min.js" strategy="lazyOnload" />
+        <Script src="../js/jquery.magnific-popup.min.js" strategy="lazyOnload" />
+        <Script src="../metisMenu.min.js" strategy="lazyOnload" />
+        <Script src="../js/wow.min.js" strategy="lazyOnload" />
+        <Script src="../js/jquery.waypoints.min.js" strategy="lazyOnload" />
+        <Script src="../js/aos.js" strategy="lazyOnload" />
+        <Script src="../js/jquery.nice-select.min.js" strategy="lazyOnload" />
+        <Script src="../js/jquery-ui.js" strategy="lazyOnload" />
+        <Script src="../js/jquery.scrollUp.min.js" strategy="lazyOnload" />
+        <Script src="../js/plugins.js" strategy="lazyOnload" />
+        <Script src="../js/main.js" strategy="lazyOnload" />
       </body>
     </html>
   );
