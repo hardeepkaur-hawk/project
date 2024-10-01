@@ -37,13 +37,9 @@ export default function Footer() {
                                     <div className="footer__widget mt-20">
                                         <h4 className="widget__title mb-30">Quick Links</h4>
                                         <ul>
-                                            <li><a href="#">Working With You</a></li>
-                                            <li><a href="#">Contact us</a></li>
-                                            <li><a href="#">FAQ</a></li>
-                                            <li><a href="#">Careers</a></li>
-                                            <li><a href="#">News Center</a></li>
-                                            <li><a href="#">About Us</a></li>
-                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="home">Home</a></li>
+                                            <li><a href="about">About</a></li>
+                                            <li><a href="contact">Contact</a></li>
                                         </ul>
                                     </div>
                                 </div>

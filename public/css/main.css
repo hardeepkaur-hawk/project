@@ -1330,6 +1330,10 @@ a.meanmenu-reveal {
   display: none !important;
 }
 
+img, svg, video, canvas, audio, iframe, embed, object {
+  vertical-align: middle;
+}
+
 .slide-bar {
   position: fixed;
   overflow-y: auto;
